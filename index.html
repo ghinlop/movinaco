@@ -34,7 +34,8 @@
     <link rel="stylesheet" href="/dist/bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/dist/fa/css/font-awesome.css"/>
     <link rel="stylesheet" href="/dist/swiper/css/swiper.min.css"/>
-    <link rel="stylesheet" href="/dist/main/css/main.min.css"/>
+    <link rel="stylesheet" href="/dist/scrollbar/perfect-scrollbar.css"/>
+    <link rel="stylesheet" href="/dist/main/css/main.css"/>
     <title>Document</title>
   </head>
   <body>
@@ -47,13 +48,7 @@
               <li><a href=""><i class="fa fa-envelope mr-1"></i>(+84) 934 323 882 </a></li>
             </ul>
           </div>
-          <div class="col-sm-6">
-            <ul class="w-100 d-sm-inline-flex align items center menu_top nolist">
-              <li><a href="/">Chính Sách</a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-            </ul>
-          </div>
+          <div class="col-sm-6"></div>
         </div>
       </div>
       <div class="cart_show effect" id="cart_show">
@@ -63,15 +58,311 @@
               <h3 class="cart_show_title text-center">Giỏ Hàng</h3>
             </div>
             <div class="cart_show_body">
-              <h4 class="text-center d-block py-2 text-light">Vui lòng chọn sản phẩm</h4>
+              <h5 class="text-center d-block p-2 text-light"><i class="text-muted">Vui lòng chọn sản phẩm</i></h5>
+            </div>
+            <ul class="cartList d-block bg-dark nolist align-items-top" id="cart-list" jqueryScroll="jqueryScroll">
+              <li class="d-inline-flex"><a class="cartList_img" href="#"><img src="/dist/images/sp-1.jpg" alt=""/></a><a class="cartList_name" href="#">Viên uống đẹp da</a></li>
+              <li class="d-inline-flex"><a class="cartList_img" href="#"><img src="/dist/images/sp-2.jpg" alt=""/></a><a class="cartList_name" href="#">Kem dưỡng da toàn thân</a></li>
+              <li class="d-inline-flex"><a class="cartList_img" href="#"><img src="/dist/images/sp-3.jpg" alt=""/></a><a class="cartList_name" href="#">Kem trị nám</a></li>
+              <li class="d-inline-flex"><a class="cartList_img" href="#"><img src="/dist/images/sp-4.jpg" alt=""/></a><a class="cartList_name" href="#">Gel rửa mặt hạt nano vàng</a></li>
+              <li class="d-inline-flex"><a class="cartList_img" href="#"><img src="/dist/images/sp-5.jpg" alt=""/></a><a class="cartList_name" href="#">Kem trị mụn</a></li>
+              <li class="d-inline-flex"><a class="cartList_img" href="#"><img src="/dist/images/sp-6.jpg" alt=""/></a><a class="cartList_name" href="#">Kem dưỡng trắng trang điểm toàn thân</a></li>
+              <li class="d-inline-flex"><a class="cartList_img" href="#"><img src="/dist/images/sp-7.jpg" alt=""/></a><a class="cartList_name" href="#">Kem dưỡng trắng hồng da</a></li>
+              <li class="d-inline-flex"><a class="cartList_img" href="#"><img src="/dist/images/sp-8.jpg" alt=""/></a><a class="cartList_name" href="#">Kem dưỡng trắng da makeup </a></li>
+            </ul>
+            <div class="d-block p-2"><a class="btn btn-warning btn-block btn-lg">Checkout</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-2"><a class="d-block header_logo" href="/"><img src="/dist/images/logo.png" alt=""/></a></div>
+            <div class="col-sm-10">
+              <aside class="text-sm-right">
+                <ul class="menu_bottom d-sm-inline-flex nolist text-uppercase text-sm-center">
+                  <li><a href="/">Dưỡng da</a></li>
+                  <li><a href="/">Làm Sạch</a></li>
+                  <li><a href="/">Sản Phẩm cao cấp</a></li>
+                  <li><a href="/">Trang Điểm</a></li>
+                  <li class="--js_dropdown" dropdown="dropdown"><a href="/">Bài Viết</a>
+                    <div class="--sub_drop">
+                      <ul class="nolist">
+                        <li><a href="/">Mẹo làm đẹp</a></li>
+                        <li><a href="/">Lợi ích thiên nhiên</a></li>
+                        <li><a href="/">Xu Hướng</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="/">Khuyến Mãi</a></li>
+                  <li><a href="/">Liên Hệ</a></li>
+                </ul>
+              </aside>
             </div>
           </div>
         </div>
       </div>
     </header>
     <div id="over"></div>
+    <div class="swiper-container header_slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="/dist/images/banner.jpg"/></div>
+        <div class="swiper-slide"><img src="/dist/images/slide-1.jpg"/></div>
+        <div class="swiper-slide"><img src="/dist/images/slide-3.jpg"/></div>
+        <div class="swiper-slide"><img src="/dist/images/slide-2.jpg"/></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <div class="container_page">
+      <div class="container text-center py-5">
+        <h3 class="container_title text-white">Chào mừng đến với</h3>
+        <h2 class="container_subtitle text-uppercase">Movinaco</h2>
+        <div class="container_line_bottom mb-2"><img src="/dist/images/icon-title.png" alt=""/></div>
+        <div class="container_desc text-center">Với mục tiêu cung cấp những sản phẩm có chất lượng cao và an toàn theo tiêu chuẩn quốc tế, đáp ứng nhu cầu chăm sóc làm đẹp hàng ngày của người tiêu dùng lẫn hỗ trợ điều trị da dành cho các chuyên gia y tế và sắc đẹp. Movinaco cũng cấp mỹ phẩm từ các thương hiệu nổi tiếng</div>
+      </div>
+    </div>
+    <div class="container_noibat bg-light py-5">
+      <div class="container text-center">
+        <h3 class="container_title">Sản phẩm</h3>
+        <h2 class="container_subtitle text-uppercase">Nổi bật</h2>
+        <div class="container_line_bottom mb-2"><img src="/dist/images/icon-title.png" alt=""/></div>
+      </div>
+      <div class="container-fluid">
+        <div class="swiper-container sp_slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide py-1 d-block text-center">
+              <div class="card sp_hot">
+                <div class="sp_hotimg"><img class="card-img-top" src="/dist/images/sp-1.jpg" alt="Viên uống đẹp da"/></div>
+                <div class="card-body">
+                  <h5 class="card-title">Viên uống đẹp da</h5>
+                  <h3 class="card-text">250.000đ</h3>
+                </div>
+                <div class="card-footer text-center">
+                  <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide py-1 d-block text-center">
+              <div class="card sp_hot">
+                <div class="sp_hotimg"><img class="card-img-top" src="/dist/images/sp-2.jpg" alt="Kem dưỡng da toàn thân"/></div>
+                <div class="card-body">
+                  <h5 class="card-title">Kem dưỡng da toàn thân</h5>
+                  <h3 class="card-text">250.000đ</h3>
+                </div>
+                <div class="card-footer text-center">
+                  <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide py-1 d-block text-center">
+              <div class="card sp_hot">
+                <div class="sp_hotimg"><img class="card-img-top" src="/dist/images/sp-3.jpg" alt="Kem trị nám"/></div>
+                <div class="card-body">
+                  <h5 class="card-title">Kem trị nám</h5>
+                  <h3 class="card-text">250.000đ</h3>
+                </div>
+                <div class="card-footer text-center">
+                  <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide py-1 d-block text-center">
+              <div class="card sp_hot">
+                <div class="sp_hotimg"><img class="card-img-top" src="/dist/images/sp-4.jpg" alt="Gel rửa mặt hạt nano vàng"/></div>
+                <div class="card-body">
+                  <h5 class="card-title">Gel rửa mặt hạt nano vàng</h5>
+                  <h3 class="card-text">250.000đ</h3>
+                </div>
+                <div class="card-footer text-center">
+                  <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide py-1 d-block text-center">
+              <div class="card sp_hot">
+                <div class="sp_hotimg"><img class="card-img-top" src="/dist/images/sp-5.jpg" alt="Kem trị mụn"/></div>
+                <div class="card-body">
+                  <h5 class="card-title">Kem trị mụn</h5>
+                  <h3 class="card-text">250.000đ</h3>
+                </div>
+                <div class="card-footer text-center">
+                  <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide py-1 d-block text-center">
+              <div class="card sp_hot">
+                <div class="sp_hotimg"><img class="card-img-top" src="/dist/images/sp-6.jpg" alt="Kem dưỡng trắng trang điểm toàn thân"/></div>
+                <div class="card-body">
+                  <h5 class="card-title">Kem dưỡng trắng trang điểm toàn thân</h5>
+                  <h3 class="card-text">250.000đ</h3>
+                </div>
+                <div class="card-footer text-center">
+                  <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide py-1 d-block text-center">
+              <div class="card sp_hot">
+                <div class="sp_hotimg"><img class="card-img-top" src="/dist/images/sp-7.jpg" alt="Kem dưỡng trắng hồng da"/></div>
+                <div class="card-body">
+                  <h5 class="card-title">Kem dưỡng trắng hồng da</h5>
+                  <h3 class="card-text">250.000đ</h3>
+                </div>
+                <div class="card-footer text-center">
+                  <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide py-1 d-block text-center">
+              <div class="card sp_hot">
+                <div class="sp_hotimg"><img class="card-img-top" src="/dist/images/sp-8.jpg" alt="Kem dưỡng trắng da makeup "/></div>
+                <div class="card-body">
+                  <h5 class="card-title">Kem dưỡng trắng da makeup </h5>
+                  <h3 class="card-text">250.000đ</h3>
+                </div>
+                <div class="card-footer text-center">
+                  <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container_noibat py-5">
+      <div class="container text-center">
+        <h3 class="container_title">Sản Phẩm Của</h3>
+        <h2 class="container_subtitle text-uppercase">Movinaco</h2>
+        <div class="container_line_bottom mb-2"><img src="/dist/images/icon-title.png" alt=""/></div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-3 mb-2">
+            <div class="card sp_hot">
+              <div class="sp_hotimg"><a href="/"><img class="card-img-top" src="/dist/images/sp-1.jpg" alt="Viên uống đẹp da"/></a></div>
+              <div class="card-body">
+                <h5 class="card-title">Viên uống đẹp da</h5>
+                <h3 class="card-text">250.000đ</h3>
+              </div>
+              <div class="card-footer text-center">
+                <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 mb-2">
+            <div class="card sp_hot">
+              <div class="sp_hotimg"><a href="/"><img class="card-img-top" src="/dist/images/sp-2.jpg" alt="Kem dưỡng da toàn thân"/></a></div>
+              <div class="card-body">
+                <h5 class="card-title">Kem dưỡng da toàn thân</h5>
+                <h3 class="card-text">250.000đ</h3>
+              </div>
+              <div class="card-footer text-center">
+                <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 mb-2">
+            <div class="card sp_hot">
+              <div class="sp_hotimg"><a href="/"><img class="card-img-top" src="/dist/images/sp-3.jpg" alt="Kem trị nám"/></a></div>
+              <div class="card-body">
+                <h5 class="card-title">Kem trị nám</h5>
+                <h3 class="card-text">250.000đ</h3>
+              </div>
+              <div class="card-footer text-center">
+                <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 mb-2">
+            <div class="card sp_hot">
+              <div class="sp_hotimg"><a href="/"><img class="card-img-top" src="/dist/images/sp-4.jpg" alt="Gel rửa mặt hạt nano vàng"/></a></div>
+              <div class="card-body">
+                <h5 class="card-title">Gel rửa mặt hạt nano vàng</h5>
+                <h3 class="card-text">250.000đ</h3>
+              </div>
+              <div class="card-footer text-center">
+                <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 mb-2">
+            <div class="card sp_hot">
+              <div class="sp_hotimg"><a href="/"><img class="card-img-top" src="/dist/images/sp-5.jpg" alt="Kem trị mụn"/></a></div>
+              <div class="card-body">
+                <h5 class="card-title">Kem trị mụn</h5>
+                <h3 class="card-text">250.000đ</h3>
+              </div>
+              <div class="card-footer text-center">
+                <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 mb-2">
+            <div class="card sp_hot">
+              <div class="sp_hotimg"><a href="/"><img class="card-img-top" src="/dist/images/sp-6.jpg" alt="Kem dưỡng trắng trang điểm toàn thân"/></a></div>
+              <div class="card-body">
+                <h5 class="card-title">Kem dưỡng trắng trang điểm toàn thân</h5>
+                <h3 class="card-text">250.000đ</h3>
+              </div>
+              <div class="card-footer text-center">
+                <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 mb-2">
+            <div class="card sp_hot">
+              <div class="sp_hotimg"><a href="/"><img class="card-img-top" src="/dist/images/sp-7.jpg" alt="Kem dưỡng trắng hồng da"/></a></div>
+              <div class="card-body">
+                <h5 class="card-title">Kem dưỡng trắng hồng da</h5>
+                <h3 class="card-text">250.000đ</h3>
+              </div>
+              <div class="card-footer text-center">
+                <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 mb-2">
+            <div class="card sp_hot">
+              <div class="sp_hotimg"><a href="/"><img class="card-img-top" src="/dist/images/sp-8.jpg" alt="Kem dưỡng trắng da makeup "/></a></div>
+              <div class="card-body">
+                <h5 class="card-title">Kem dưỡng trắng da makeup </h5>
+                <h3 class="card-text">250.000đ</h3>
+              </div>
+              <div class="card-footer text-center">
+                <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-dark py-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-3 footer_info"><a class="d-block footer_logo" href="/"><img class="w-100" src="/dist/images/logo.png" alt=""/></a>
+            <ul class="nolist">
+              <li><i class="fa fa-home mr-1 fa-lg"></i>Tầng 3, Tòa nhà GP INVEST, 170 Đê La Thành, P.Ô Chợ Dừa, Q.Đống Đa, HN</li>
+              <li class="d-inline-flex"><i class="fa fa-phone fa-lg"></i>
+                <p class="mb-0"><a href="tel:02546275555">
+                     Tổng đài hỗ trợ: (+84) 254 627 5555</a><a href="tel:02547300400 ">
+                     Số hotline ngoài giờ: (+84) 2547 300 400 </a></p>
+              </li>
+              <li><a href="mailto:design@vutatech.vn"><i class="fa fa-phone fa-lg"></i>Design@vutatech.vn</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3"></div>
+          <div class="col-sm-3"></div>
+          <div class="col-sm-3"></div>
+        </div>
+      </div>
+    </footer>
     <script src="/dist/jquery/jquery-3.3.1.min.js"></script>
     <script src="/dist/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/dist/scrollbar/perfect-scrollbar.min.js"></script>
     <script src="/dist/swiper/js/swiper.min.js"></script>
     <script src="/dist/main/js/main.js"></script>
   </body>

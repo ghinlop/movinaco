@@ -9,7 +9,7 @@ const gulp          = require('gulp')
     , plumber       = require('gulp-plumber')
 
 gulp.task('sass', () => {
-   gulp.src('./dev/scss/*.scss')
+   gulp.src('./dist/main/css/main.scss')
         .pipe(plumber({
             errorHandler: function (error) {
                     console.log(error.toString());
@@ -39,8 +39,8 @@ gulp.task('pug', () => {
 gulp.task('watch-sass', () => {
     liveReload.listen();
     gulp.watch([
-        './dev/scss/**/*.scss',
-        './dev/scss/*.scss'
+        './dist/main/css/**/*.scss',
+        './dist/main/css/*.scss'
         ],
         ['sass']);
 })
@@ -55,6 +55,6 @@ gulp.task('server', function(done) {
     http.createServer(
       st({ path: __dirname + '/', index: 'index.html', cache: false })
     ).listen(8080, done);
-    gulp.run(['watch-pug'])
+    gulp.run(['watch-pug', 'watch-sass'])
 });
 

@@ -1,3 +1,4 @@
+include ../mixin/data
 header
     .container
         .row
@@ -12,13 +13,7 @@ header
                             i.fa.fa-envelope.mr-1
                             |(+84) 934 323 882 
             .col-sm-6
-                ul.w-100.d-sm-inline-flex.align.items.center.menu_top.nolist
-                    li
-                        a(href="/") Chính Sách
-                    li
-                        a(href="")
-                    li
-                        a(href="")
+                
     .cart_show.effect#cart_show
         .cart_show_content
             a.cart_show_icon.text-white(href="#" toggle-menu="cart_show" over)
@@ -27,6 +22,45 @@ header
                 .cart_show_header
                     h3.cart_show_title.text-center Giỏ Hàng
                 .cart_show_body
-                    h4.text-center.d-block.py-2.text-light
-                        |Vui lòng chọn sản phẩm
+                    h5.text-center.d-block.p-2.text-light
+                        i.text-muted Vui lòng chọn sản phẩm
+                ul#cart-list.cartList.d-block.bg-dark.nolist.align-items-top(jqueryScroll)
+                    each item in items
+                        li.d-inline-flex
+                            a(href="#").cartList_img
+                                img(src=item.img, alt="")
+                            a(href="#").cartList_name=item.name
+                .d-block.p-2
+                    a.btn.btn-warning.btn-block.btn-lg Checkout
+    .bg-white
+        .container
+            .row.align-items-center
+                .col-sm-2
+                    a(href="/").d-block.header_logo
+                        img(src="/dist/images/logo.png", alt="")
+                .col-sm-10
+                    aside.text-sm-right
+                        ul.menu_bottom.d-sm-inline-flex.nolist.text-uppercase.text-sm-center
+                            li
+                                a(href="/") Dưỡng da
+                            li
+                                a(href="/") Làm Sạch
+                            li
+                                a(href="/") Sản Phẩm cao cấp
+                            li
+                                a(href="/") Trang Điểm
+                            li.--js_dropdown(dropdown)
+                                a(href="/") Bài Viết
+                                .--sub_drop
+                                    ul.nolist
+                                            li
+                                                a(href="/") Mẹo làm đẹp
+                                            li
+                                                a(href="/") Lợi ích thiên nhiên
+                                            li
+                                                a(href="/") Xu Hướng
+                            li
+                                a(href="/") Khuyến Mãi
+                            li
+                                a(href="/") Liên Hệ
 #over

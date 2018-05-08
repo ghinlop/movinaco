@@ -1,0 +1,13 @@
+.row
+    each item in items
+        .col-sm-3.mb-2
+            .card.sp_hot
+                .sp_hotimg
+                    a(href="/")
+                        img.card-img-top(src=item.img, alt=item.name)
+                .card-body
+                    h5.card-title=item.name
+                    h3.card-text=item.price                                
+                .card-footer.text-center
+                    .sp_btn
+                        a.sp_btn(href='#') mua ngay

@@ -1,0 +1,34 @@
+{
+    "sp_1": {
+        "name": "Viên uống đẹp da",
+        "img": "/dist/images/sp-1.jpg"
+    },
+    "sp_2": {
+        "name": "Kem dưỡng da toàn thân",
+        "img": "/dist/images/sp-2.jpg"
+    },
+    "sp_3": {
+        "name": "Kem trị nám",
+        "img": "/dist/images/sp-3.jpg"
+    },
+    "sp_4": {
+        "name": "Gel rửa mặt hạt nano vàng",
+        "img": "/dist/images/sp-4.jpg"
+    },
+    "sp_5": {
+        "name": "Kem trị mụn",
+        "img": "/dist/images/sp-5.jpg"
+    },
+    "sp_6": {
+        "name": "Kem dưỡng trắng trang điểm toàn thân",
+        "img": "/dist/images/sp-6.jpg"
+    },
+    "sp_7": {
+        "name": "Kem dưỡng trắng hồng da",
+        "img": "/dist/images/sp-7.jpg"
+    },
+    "sp_8": {
+        "name": "Kem dưỡng trắng da makeup",
+        "img": "/dist/images/sp-8.jpg"
+    }
+}
