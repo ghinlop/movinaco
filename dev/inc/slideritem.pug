@@ -1,0 +1,13 @@
+.swiper-container.gallery-top
+    .swiper-wrapper
+        each item, index in items
+            .swiper-slide
+                .sp_hotimg.lg
+                    img(src=item.img, alt=item.name)
+    .swiper-button-next.swiper-button-white
+    .swiper-button-prev.swiper-button-white
+.swiper-container.gallery-thumbs.bg-dark
+    .swiper-wrapper
+        each item, index in items
+            .swiper-slide
+                img(src=item.img, alt=item.name, id=index)

@@ -1,0 +1,122 @@
+mixin listCategory
+    .widget_box
+        .widget_header.text-uppercase
+            a.widget_title.d-block(
+                data-toggle='collapse', 
+                href='#productlistContent', 
+                role='button', 
+                aria-expanded='false', 
+                aria-controls='productlistContent') Danh mục sản phẩm
+        #productlistContent.collapse.show
+            ul.widget_body.nolist
+                li
+                    a(href='/listproduct.html') Mặt nạ
+                li
+                    a(href='/listproduct.html') Làm sạch da
+                li
+                    a(href='/listproduct.html') Dưỡng da
+                li
+                    a(href='/listproduct.html') Trang điểm
+                li
+                    a(href='/listproduct.html') Chăm sóc cơ thể
+mixin filter_price
+    .widget_box
+        .widget_header.text-uppercase
+            a.widget_title.d-block(
+                data-toggle='collapse', 
+                href='#productlistContent-2', 
+                role='button', 
+                aria-expanded='false', 
+                aria-controls='productlistContent-2') Khoảng Giá
+        #productlistContent-2.collapse.show
+            ul.widget_body.nolist
+                li
+                    input#price-1(type="radio", name="radio", value="1", hidden, checked)
+                    label(for="price-1") Tất cả
+                li
+                    input#price-2(type="radio", name="radio", value="2", hidden)
+                    label(for="price-2") Nhỏ hơn 100,000₫
+                li
+                    input#price-3(type="radio", name="radio", value="3", hidden)
+                    label(for="price-3") Từ 100,000₫ - 200,000₫
+                li
+                    input#price-4(type="radio", name="radio", value="4", hidden)
+                    label(for="price-4") Từ 200,000₫ - 300,000₫
+                li
+                    input#price-5(type="radio", name="radio", value="5", hidden)
+                    label(for="price-5") Từ 300,000₫ - 500,000₫
+                li
+                    input#price-6(type="radio", name="radio", value="6", hidden)
+                    label(for="price-6") Từ 500,000₫ - 600,000₫
+                li
+                    input#price-7(type="radio", name="radio", value="7", hidden)
+                    label(for="price-7") Lớn hơn 600,000₫
+mixin filter_production
+    .widget_box
+        .widget_header.text-uppercase
+            a.widget_title.d-block(
+                data-toggle='collapse', 
+                href='#productlistContent-3', 
+                role='button', 
+                aria-expanded='false', 
+                aria-controls='productlistContent-3') Khoảng Giá
+        #productlistContent-3.collapse.show
+            ul.widget_body.nolist
+                li
+                    input#company-1(type="checkbox", name="checkbox", value="1", hidden)
+                    label(for="company-1") THE BODY SHOP
+                li
+                    input#company-2(type="checkbox", name="checkbox", value="2", hidden)
+                    label(for="company-2") LANCÔME
+                li
+                    input#company-3(type="checkbox", name="checkbox", value="3", hidden)
+                    label(for="company-3") MAYBELLINE
+                li
+                    input#company-4(type="checkbox", name="checkbox", value="4", hidden)
+                    label(for="company-4") THEFACESHOP
+                li
+                    input#company-5(type="checkbox", name="checkbox", value="5", hidden)
+                    label(for="company-5") Laura
+                li
+                    input#company-7(type="checkbox", name="checkbox", value="7", hidden)
+                    label(for="company-7") SHISEIDO
+                li
+                    input#company-6(type="checkbox", name="checkbox", value="6", hidden)
+                    label(for="company-6") Khác
+mixin show_product(name = 'Sản Phẩm', id = 'product')
+    .widget_box
+        .widget_header.text-uppercase
+            a.widget_title.d-block(
+                data-toggle='collapse', 
+                href='#list'+id, 
+                role='button', 
+                aria-expanded='false', 
+                aria-controls='list'+id)=name
+        .collapse.show(id='list'+id)
+            ul.widget_body.nolist
+                each val in items
+                    li
+                        a.px-3
+                            .w-100.row(href="/productinfo.html")
+                                img.col-sm-3.d-block.px-0.w-100(src=val.img, alt=val.name)
+                                h6.col-sm-9.text-info=val.name
+                                    span.d-block.text-danger=val.price
+mixin listpost(name = "Bài viết", id = 'post')
+    .widget_box
+        .widget_header.text-uppercase
+            a.widget_title.d-block(
+                data-toggle='collapse', 
+                href='#list'+id, 
+                role='button', 
+                aria-expanded='false', 
+                aria-controls='list'+id)=name
+        .collapse.show(id='list'+id)
+            ul.widget_body.pl-0
+                each post in posts
+                    li
+                        a.py-1.d-block(href="/postdetailt.html")
+                            small=post.title
+
+
+
+

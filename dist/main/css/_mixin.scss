@@ -82,8 +82,11 @@ $color: #000;
             border: 1px solid $border;
             margin: -2px 10px auto 0;
             line-height: 17px;
-            @include effect;
+            @include effect(all, 0.2s, linear);
         }
+    }
+    input[type='radio'] ~ label::before{
+        border-radius: 50%;
     }
     input[type='checkbox']:checked ~ label, input[type='radio']:checked ~ label{
         &::before{

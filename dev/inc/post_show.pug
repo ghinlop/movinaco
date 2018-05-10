@@ -1,0 +1,29 @@
+.container-fluid.bg-info.py-3.text-center
+    h3.container_title.text-white Tin Tức
+    h2.container_subtitle.text-uppercase.text-light LỢI ÍCH THIÊN NHIÊN
+    .container_line_bottom.mb-2
+        img(src="/dist/images/icon-title.png", alt="")
+    .swiper-container.news_slider
+        .swiper-wrapper
+            each post in posts
+                .swiper-slide
+                    .card.news.text-left
+                        .news_hotimg
+                            a(href="/")
+                                img.card-img-top(src=post.img, alt=post.title)
+                        .card-body.py-2
+                            .row
+                                .col-6.text-muted
+                                    small
+                                        i.fa.fa-calendar-o.mr-1
+                                        =post.date
+                                .col-6.text-right.text-muted
+                                    small
+                                        i.fa.fa-comment.mr-1
+                                        =post.comment
+                                .col-12.py-1
+                                    a.d-block(href="")
+                                        h5.card-title=post.title
+                                .col-12.news_desc(maxlength)=post.desc
+        .swiper-button-next
+        .swiper-button-prev

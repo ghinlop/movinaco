@@ -1,9 +1,10 @@
-include ../mixin/data
+include ../data/data
+#over
 header
     .container
         .row
-            .col-sm-6
-                ul.w-100.d-sm-inline-flex.align.items.center.menu_social.nolist
+            .col-md-6
+                ul.w-100.d-md-inline-flex.align.items.center.menu_social.nolist
                     li
                         a(href="")
                             i.fa.fa-phone.mr-1
@@ -12,11 +13,11 @@ header
                         a(href="")
                             i.fa.fa-envelope.mr-1
                             |(+84) 934 323 882 
-            .col-sm-6
+            .col-md-6
                 
     .cart_show.effect#cart_show
         .cart_show_content
-            a.cart_show_icon.text-white(href="#" toggle-menu="cart_show" over)
+            a.cart_show_icon.text-white(href="#" toggle-menu="cart_show" over noscroll)
                 i.fa.fa-shopping-cart.fa.lg
             .cart_show_box
                 .cart_show_header
@@ -35,22 +36,22 @@ header
     .bg-white
         .container
             .row.align-items-center
-                .col-sm-2
+                .col-md-2
                     a(href="/").d-block.header_logo
                         img(src="/dist/images/logo.png", alt="")
-                .col-sm-10
-                    aside.text-sm-right
-                        ul.menu_bottom.d-sm-inline-flex.nolist.text-uppercase.text-sm-center
+                .col-md-10
+                    aside.text-md-right
+                        ul.menu_bottom.d-md-inline-flex.nolist.text-uppercase.text-md-center
                             li
-                                a(href="/") Dưỡng da
+                                a(href="/listproduct.html") Dưỡng da
                             li
-                                a(href="/") Làm Sạch
+                                a(href="/listproduct.html") Làm Sạch
                             li
-                                a(href="/") Sản Phẩm cao cấp
+                                a(href="/listproduct.html") Sản Phẩm cao cấp
                             li
-                                a(href="/") Trang Điểm
+                                a(href="/listproduct.html") Trang Điểm
                             li.--js_dropdown(dropdown)
-                                a(href="/") Bài Viết
+                                a(href="/news.html") Bài Viết
                                 .--sub_drop
                                     ul.nolist
                                             li
@@ -62,5 +63,4 @@ header
                             li
                                 a(href="/") Khuyến Mãi
                             li
-                                a(href="/") Liên Hệ
-#over
+                                a(href="/contact.html") Liên Hệ

@@ -1,0 +1,45 @@
+extend ./layout/layout
+block index
+    include ./inc/header
+    include ./inc/slider
+    include ./mixin/widget
+    .container-fluid.py-4
+        .row
+            .col-md-3.order-md-1.order-2
+                +listpost
+                +listpost('Tin tức mới', 'newpost')
+                +show_product
+            .col-md-9.order-md-2.order-1.sp_hot
+                h4.text-info.mb-0.pb-2.border-bottom.border-info
+                    =posts[0].title
+                .d-sm.block.text-muted.d-inline-flex
+                    small.mr-sm-3.p-sm-0.p-2
+                        i.fa.fa-calendar-o.mr-1
+                        =posts[0].date
+                    small.p-sm-0.p-2
+                        i.fa.fa-comment-o.mr-1
+                        =posts[0].comment
+                figure.py-2
+                    p
+                        | Mỗi khi nhắc đến trang điểm, các cô gái vẫn thường nhắc đến lớp kem nền nhiều hơn cả vì đó chính là nền tảng cho một lớp make up đẹp. Tuy nhiên, kem lót vẫn giữ vị trí quan trọng không kém trong quá trình làm đẹp. Việc hoàn thành cặp mắt mèo vẽ tỉ mỉ, hay đôi môi cong đỏ rực chỉn chu nhưng lại thấp thoáng vệt kem nền không đều hay lộ hẳn vùng da có khuyết điểm thì quả là một thảm hoạ không ai muốn. Đừng nghĩ đến kem nền tốt hay kem che khuyết điểm tốt mới cứu được bạn, chính kem lót trang điểm mới là cứu tinh cho vấn đề này. Ngoài ra, kem lót như một lớp “áo trong” giúp cải thiện và làm đều màu da, lấp đầy các vết nhăn cững như xóa mờ các lỗ chân lông đáng ghét, từ đó chuẩn bị cho bước trang điểm với kem nền tiếp theo một cách tốt nhất. Primer và Makeup Base đều là sản phẩm lót trang điểm giúp bảo vệ bề mặt da, ngăn ngừa tình trạng phấn trang điểm len lỏi vào lỗ chân lông gây bít tắc da và mụn cám. Mặc dù có cùng điểm chung như vậy nhưng giữa 2 sản phẩm tuy giống mà vẫn có điểm khác đấy nàng nhé!
+                    p(style='text-align: center;', data-mce-style='text-align: center;')
+                        img(src='//file.hstatic.net/1000187239/file/5_tin_tuc_chi_tiet_grande.png', alt='desc--2', data-mce-src='//file.hstatic.net/1000187239/file/5_tin_tuc_chi_tiet_grande.png', width='293', height='293')
+                        img(src='//file.hstatic.net/1000187239/file/6_tin_tuc_chi_tiet_grande.png', data-mce-src='//file.hstatic.net/1000187239/file/6_tin_tuc_chi_tiet_grande.png', width='277', height='277')
+                    p
+                        | + Primer: Kết cấu thường trong suốt, không màu, mang đến bề mặt da mịn mượt và láng mướt tựa sa tin. Sử dụng Primer còn giúp ngăn dầu và duy trì lớp nền lâu trôi. Primer phù hợp cho hầu hết mọi đối tượng.
+                    p(style='text-align: center;', data-mce-style='text-align: center;')
+                        img(src='//file.hstatic.net/1000187239/file/7_tin_tuc_chi_tiet_grande.png', alt='desc2', data-mce-src='//file.hstatic.net/1000187239/file/7_tin_tuc_chi_tiet_grande.png', width='286', height='286')
+                        img(src='//file.hstatic.net/1000187239/file/8_tin_tuc_chi_tiet_medium.png', data-mce-src='//file.hstatic.net/1000187239/file/8_tin_tuc_chi_tiet_medium.png', width='292', height='292')
+                    p
+                        | + Makeup Base: Ngoài khả năng giúp duy trì lớp nền lâu trôi và hỗ trợ kiểm soát dầu, kem lót có công thức chứa màu phổ biến là xanh lá cây hoặc tím để cân chỉnh sắc diện cho làn da. Nếu nàng có làn da tái, xanh xao và nhợt nhạt thì hãy chọn kem lót màu tím để tăng thêm vẻ hồng hào cho da. Còn nếu nàng gặp vấn đề đốm mụn đỏ, gân máu hoặc làn da dư sắc đỏ thì hãy chọn kem lót màu xanh lá cây để cân chỉnh lại cho làn da nhé.
+                .d-block.py-sm-5.py-3
+                    h4.text-info.mb-0.pb-2.border-bottom.border-info.mb-2
+                        i.fa.fa-comment.fa-lg.mr-1
+                        |Bình luận
+                    form(action="", method="POST")
+                        .form-group
+                            textarea#comment.form-control(name="", cols="30", rows="10")
+                        .form-group.text-sm-right.text-center
+                            button.btn.btn-primary(type="submit") Gửi bình luận
+
+                

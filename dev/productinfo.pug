@@ -1,0 +1,62 @@
+extend ./layout/layout
+block index
+    include ./inc/header
+    include ./inc/slider
+    include ./mixin/widget
+    .container-fluid.py-4
+        .row
+            .col-md-3.order-md-1.order-2
+                +listCategory
+                +show_product
+            .col-md-9.order-md-2.order-1.sp_hot
+                .row
+                    .col-md-5
+                        include ./inc/slideritem
+                    .col-md-7
+                        h4.product_title Cream Aromatica Sea Daffodil Aqua Gel
+                        p.text-warning
+                            i.fa.fa-star.lg.mr-1
+                            i.fa.fa-star.lg.mr-1
+                            i.fa.fa-star.lg.mr-1
+                            i.fa.fa-star.lg.mr-1
+                            i.fa.fa-star.lg.mr-1
+                        .d-inline-flex.align-items-center
+                            span.mr-2 Giá:
+                            h4.mr-2.mb-0.mb-0.text-info.align-bottom 300.000
+                                small đ
+                            span.font-italic (đã bao gồm VAT)
+                        ul.pl-1
+                            li Thương hiệu: THEFACESHOP
+                            li Dòng sản phẩm: Daily Perfume
+                            li Giảm 10% cho hóa đơn trên 500.000 VNĐ
+                            li Miễn phí giao hàng trong bán kính 5km
+                        .d-block
+                            .sp_btn
+                                a.sp_btn(href='/productinfo.html') mua ngay                               
+                .col-md-12.px-sm-0.px-2.--tab_box.mt-2(tabs-role)
+                    .d-flex
+                        a#tab-1.--tabs_tag.active(href="#tab-1" tab-action)
+                            i.fa.fa-cube.fa-lg.mr-1
+                            span.d-md-inline.d-none.text-uppercase
+                                |Mô tả sản phẩm 
+                        a#tab-2.--tabs_tag(href="#tab-2" tab-action) 
+                            i.fa.fa-book.fa-lg.mr-1
+                            span.d-md-inline.d-none.text-uppercase
+                                |Hướng dẫn sử dụng
+                        a#tab-3.--tabs_tag(href="#tab-3" tab-action) 
+                            .i.fa.fa-star.fa-lg.mr-1
+                            span.d-md-inline.d-none.text-uppercase
+                                |Đánh giá
+                        a#tab-4.--tabs_tag(href="#tab-4" tab-action) 
+                            .i.fa.fa-comment.fa-lg.mr-1
+                            span.d-md-inline.d-none.text-uppercase
+                                |Bình Luận
+                    div(tabs-content)
+                        #tab-1.--tab_content.active.show
+                            |Mô tả
+                        #tab-2.--tab_content
+                            |hướng dẫn
+                        #tab-3.--tab_content
+                            |Đánh giá
+                        #tab-4.--tab_content
+                            |Bình Luận

@@ -1,0 +1,45 @@
+extend ./layout/layout
+block index
+    include ./inc/header
+    include ./inc/slider
+    include ./mixin/widget
+    .container-fluid.py-4
+        .row
+            .col-md-3.order-md-1.order-2
+                +listpost
+                +listpost('Tin tức mới', 'newpost')
+                +show_product
+            .col-md-9.order-md-2.order-1
+                .row
+                    each post in posts
+                        .col-md-4.mb-2
+                            .card.news.text-left
+                                .news_hotimg
+                                    a(href="/")
+                                        img.card-img-top(src=post.img, alt=post.title)
+                                .card-body.py-2
+                                    .row
+                                        .col-6.text-muted
+                                            small
+                                                i.fa.fa-calendar-o.mr-1
+                                                =post.date
+                                        .col-6.text-right.text-muted
+                                            small
+                                                i.fa.fa-comment.mr-1
+                                                =post.comment
+                                        .col-12.py-1
+                                            a.d-block(href="/postdetailt.html")
+                                                h5.card-title=post.title
+                                        .col-12.news_desc(maxlength)=post.desc
+                    .col-md-12.py-3
+                        ul.pagination.justify-content-center
+                            li.page-item.disabled
+                                a.page-link(href='#', tabindex='-1') Previous
+                            li.page-item
+                                a.page-link(href='#') 1
+                            li.page-item
+                                a.page-link(href='#') 2
+                            li.page-item
+                                a.page-link(href='#') 3
+                            li.page-item
+                                a.page-link(href='#') Next

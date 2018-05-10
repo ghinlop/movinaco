@@ -3,7 +3,7 @@ block index
     include ./inc/header
     include ./inc/slider
     .container_page
-        .container.text-center.py-5
+        .container.text-center.py-3
             h3.container_title.text-white Chào mừng đến với
             h2.container_subtitle.text-uppercase Movinaco
             .container_line_bottom.mb-2
@@ -11,7 +11,8 @@ block index
             .container_desc.text-center
                 |Với mục tiêu cung cấp những sản phẩm có chất lượng cao và an toàn theo tiêu chuẩn quốc tế, đáp ứng nhu cầu chăm sóc làm đẹp hàng ngày của người tiêu dùng lẫn hỗ trợ điều trị da dành cho các chuyên gia y tế và sắc đẹp. Movinaco cũng cấp mỹ phẩm từ các thương hiệu nổi tiếng
     include ./inc/hot_product
-    .container_noibat.py-5
+    include ./inc/post_show
+    .container_noibat.py-3
         .container.text-center
             h3.container_title Sản Phẩm Của
             h2.container_subtitle.text-uppercase Movinaco
@@ -19,3 +20,23 @@ block index
                 img(src="/dist/images/icon-title.png", alt="")
         .container-fluid
             include ./inc/show_product
+    .container_slo.py-3
+        .container
+            .row
+                .col-md-3.text-center
+                    i.fa.fa-truck.fa-lg
+                    h5.mb-0 MIỄN PHÍ VẬN CHUYỂN
+                    small Nhận hàng trong vòng 3 ngày
+                .col-md-3.text-center
+                    i.fa.fa-certificate.fa-lg
+                    h5.mb-0 MIỄN PHÍ VẬN CHUYỂN
+                    small Nhận hàng trong vòng 3 ngày
+                .col-md-3.text-center
+                    i.fa.fa-life-saver.fa-lg
+                    h5.mb-0 MIỄN PHÍ VẬN CHUYỂN
+                    small Nhận hàng trong vòng 3 ngày
+                .col-md-3.text-center
+                    i.fa.fa-undo.fa-lg
+                    h5.mb-0 MIỄN PHÍ VẬN CHUYỂN
+                    small Nhận hàng trong vòng 3 ngày
+                    

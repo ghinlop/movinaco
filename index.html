@@ -39,20 +39,21 @@
     <title>Document</title>
   </head>
   <body>
+    <div id="over"></div>
     <header>
       <div class="container">
         <div class="row">
-          <div class="col-sm-6">
-            <ul class="w-100 d-sm-inline-flex align items center menu_social nolist">
+          <div class="col-md-6">
+            <ul class="w-100 d-md-inline-flex align items center menu_social nolist">
               <li><a href=""><i class="fa fa-phone mr-1"></i>(+84) 934 323 882 </a></li>
               <li><a href=""><i class="fa fa-envelope mr-1"></i>(+84) 934 323 882 </a></li>
             </ul>
           </div>
-          <div class="col-sm-6"></div>
+          <div class="col-md-6"></div>
         </div>
       </div>
       <div class="cart_show effect" id="cart_show">
-        <div class="cart_show_content"><a class="cart_show_icon text-white" href="#" toggle-menu="cart_show" over="over"><i class="fa fa-shopping-cart fa lg"></i></a>
+        <div class="cart_show_content"><a class="cart_show_icon text-white" href="#" toggle-menu="cart_show" over="over" noscroll="noscroll"><i class="fa fa-shopping-cart fa lg"></i></a>
           <div class="cart_show_box">
             <div class="cart_show_header">
               <h3 class="cart_show_title text-center">Giỏ Hàng</h3>
@@ -77,15 +78,15 @@
       <div class="bg-white">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-sm-2"><a class="d-block header_logo" href="/"><img src="/dist/images/logo.png" alt=""/></a></div>
-            <div class="col-sm-10">
-              <aside class="text-sm-right">
-                <ul class="menu_bottom d-sm-inline-flex nolist text-uppercase text-sm-center">
-                  <li><a href="/">Dưỡng da</a></li>
-                  <li><a href="/">Làm Sạch</a></li>
-                  <li><a href="/">Sản Phẩm cao cấp</a></li>
-                  <li><a href="/">Trang Điểm</a></li>
-                  <li class="--js_dropdown" dropdown="dropdown"><a href="/">Bài Viết</a>
+            <div class="col-md-2"><a class="d-block header_logo" href="/"><img src="/dist/images/logo.png" alt=""/></a></div>
+            <div class="col-md-10">
+              <aside class="text-md-right">
+                <ul class="menu_bottom d-md-inline-flex nolist text-uppercase text-md-center">
+                  <li><a href="/listproduct.html">Dưỡng da</a></li>
+                  <li><a href="/listproduct.html">Làm Sạch</a></li>
+                  <li><a href="/listproduct.html">Sản Phẩm cao cấp</a></li>
+                  <li><a href="/listproduct.html">Trang Điểm</a></li>
+                  <li class="--js_dropdown" dropdown="dropdown"><a href="/news.html">Bài Viết</a>
                     <div class="--sub_drop">
                       <ul class="nolist">
                         <li><a href="/">Mẹo làm đẹp</a></li>
@@ -95,7 +96,7 @@
                     </div>
                   </li>
                   <li><a href="/">Khuyến Mãi</a></li>
-                  <li><a href="/">Liên Hệ</a></li>
+                  <li><a href="/contact.html">Liên Hệ</a></li>
                 </ul>
               </aside>
             </div>
@@ -103,7 +104,6 @@
         </div>
       </div>
     </header>
-    <div id="over"></div>
     <div class="swiper-container header_slider">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="/dist/images/banner.jpg"/></div>
@@ -115,14 +115,14 @@
       <div class="swiper-button-prev"></div>
     </div>
     <div class="container_page">
-      <div class="container text-center py-5">
+      <div class="container text-center py-3">
         <h3 class="container_title text-white">Chào mừng đến với</h3>
         <h2 class="container_subtitle text-uppercase">Movinaco</h2>
         <div class="container_line_bottom mb-2"><img src="/dist/images/icon-title.png" alt=""/></div>
         <div class="container_desc text-center">Với mục tiêu cung cấp những sản phẩm có chất lượng cao và an toàn theo tiêu chuẩn quốc tế, đáp ứng nhu cầu chăm sóc làm đẹp hàng ngày của người tiêu dùng lẫn hỗ trợ điều trị da dành cho các chuyên gia y tế và sắc đẹp. Movinaco cũng cấp mỹ phẩm từ các thương hiệu nổi tiếng</div>
       </div>
     </div>
-    <div class="container_noibat bg-light py-5">
+    <div class="container_noibat bg-light py-3">
       <div class="container text-center">
         <h3 class="container_title">Sản phẩm</h3>
         <h2 class="container_subtitle text-uppercase">Nổi bật</h2>
@@ -139,7 +139,7 @@
                   <h3 class="card-text">250.000đ</h3>
                 </div>
                 <div class="card-footer text-center">
-                  <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+                  <div class="sp_btn"><a class="sp_btn" href="/productinfo.html">mua ngay</a></div>
                 </div>
               </div>
             </div>
@@ -151,7 +151,7 @@
                   <h3 class="card-text">250.000đ</h3>
                 </div>
                 <div class="card-footer text-center">
-                  <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+                  <div class="sp_btn"><a class="sp_btn" href="/productinfo.html">mua ngay</a></div>
                 </div>
               </div>
             </div>
@@ -163,7 +163,7 @@
                   <h3 class="card-text">250.000đ</h3>
                 </div>
                 <div class="card-footer text-center">
-                  <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+                  <div class="sp_btn"><a class="sp_btn" href="/productinfo.html">mua ngay</a></div>
                 </div>
               </div>
             </div>
@@ -175,7 +175,7 @@
                   <h3 class="card-text">250.000đ</h3>
                 </div>
                 <div class="card-footer text-center">
-                  <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+                  <div class="sp_btn"><a class="sp_btn" href="/productinfo.html">mua ngay</a></div>
                 </div>
               </div>
             </div>
@@ -187,7 +187,7 @@
                   <h3 class="card-text">250.000đ</h3>
                 </div>
                 <div class="card-footer text-center">
-                  <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+                  <div class="sp_btn"><a class="sp_btn" href="/productinfo.html">mua ngay</a></div>
                 </div>
               </div>
             </div>
@@ -199,7 +199,7 @@
                   <h3 class="card-text">250.000đ</h3>
                 </div>
                 <div class="card-footer text-center">
-                  <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+                  <div class="sp_btn"><a class="sp_btn" href="/productinfo.html">mua ngay</a></div>
                 </div>
               </div>
             </div>
@@ -211,7 +211,7 @@
                   <h3 class="card-text">250.000đ</h3>
                 </div>
                 <div class="card-footer text-center">
-                  <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+                  <div class="sp_btn"><a class="sp_btn" href="/productinfo.html">mua ngay</a></div>
                 </div>
               </div>
             </div>
@@ -223,7 +223,7 @@
                   <h3 class="card-text">250.000đ</h3>
                 </div>
                 <div class="card-footer text-center">
-                  <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+                  <div class="sp_btn"><a class="sp_btn" href="/productinfo.html">mua ngay</a></div>
                 </div>
               </div>
             </div>
@@ -233,7 +233,102 @@
         </div>
       </div>
     </div>
-    <div class="container_noibat py-5">
+    <div class="container-fluid bg-info py-3 text-center">
+      <h3 class="container_title text-white">Tin Tức</h3>
+      <h2 class="container_subtitle text-uppercase text-light">LỢI ÍCH THIÊN NHIÊN</h2>
+      <div class="container_line_bottom mb-2"><img src="/dist/images/icon-title.png" alt=""/></div>
+      <div class="swiper-container news_slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card news text-left">
+              <div class="news_hotimg"><a href="/"><img class="card-img-top" src="/dist/images/news-1.jpg" alt="Cách chọn kem lót phù hợp loại da 2"/></a></div>
+              <div class="card-body py-2">
+                <div class="row">
+                  <div class="col-6 text-muted"><small><i class="fa fa-calendar-o mr-1"></i>08/05/2018</small></div>
+                  <div class="col-6 text-right text-muted"><small><i class="fa fa-comment mr-1"></i>0</small></div>
+                  <div class="col-12 py-1"><a class="d-block" href="">
+                      <h5 class="card-title">Cách chọn kem lót phù hợp loại da 2</h5></a></div>
+                  <div class="col-12 news_desc" maxlength="maxlength">Primer và Makeup Base đều là sản phẩm lót trang điểm giúp bảo vệ bề mặt da, ngăn ngừa tình trạng phấn trang điểm len lỏi vào lỗ chân lông gây bít tắc da và mụn cám. Mặc dù có cùng...</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card news text-left">
+              <div class="news_hotimg"><a href="/"><img class="card-img-top" src="/dist/images/news-2.jpg" alt="Cách chọn kem lót phù hợp loại da"/></a></div>
+              <div class="card-body py-2">
+                <div class="row">
+                  <div class="col-6 text-muted"><small><i class="fa fa-calendar-o mr-1"></i>08/05/2018</small></div>
+                  <div class="col-6 text-right text-muted"><small><i class="fa fa-comment mr-1"></i>0</small></div>
+                  <div class="col-12 py-1"><a class="d-block" href="">
+                      <h5 class="card-title">Cách chọn kem lót phù hợp loại da</h5></a></div>
+                  <div class="col-12 news_desc" maxlength="maxlength">Primer và Makeup Base đều là sản phẩm lót trang điểm giúp bảo vệ bề mặt da, ngăn ngừa tình trạng phấn trang điểm len lỏi vào lỗ chân lông gây bít tắc da và mụn cám. Mặc dù có cùng...</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card news text-left">
+              <div class="news_hotimg"><a href="/"><img class="card-img-top" src="/dist/images/news-3.png" alt="Cùng Suzy cập nhật quy trình dưỡng da hoàn toàn mới"/></a></div>
+              <div class="card-body py-2">
+                <div class="row">
+                  <div class="col-6 text-muted"><small><i class="fa fa-calendar-o mr-1"></i>08/05/2018</small></div>
+                  <div class="col-6 text-right text-muted"><small><i class="fa fa-comment mr-1"></i>0</small></div>
+                  <div class="col-12 py-1"><a class="d-block" href="">
+                      <h5 class="card-title">Cùng Suzy cập nhật quy trình dưỡng da hoàn toàn mới</h5></a></div>
+                  <div class="col-12 news_desc" maxlength="maxlength">Primer và Makeup Base đều là sản phẩm lót trang điểm giúp bảo vệ bề mặt da, ngăn ngừa tình trạng phấn trang điểm len lỏi vào lỗ chân lông gây bít tắc da và mụn cám. Mặc dù có cùng...</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card news text-left">
+              <div class="news_hotimg"><a href="/"><img class="card-img-top" src="/dist/images/news-4.jpg" alt="Chăm Sóc Da Dầu Mụn Với Dr.Belmeur"/></a></div>
+              <div class="card-body py-2">
+                <div class="row">
+                  <div class="col-6 text-muted"><small><i class="fa fa-calendar-o mr-1"></i>08/05/2018</small></div>
+                  <div class="col-6 text-right text-muted"><small><i class="fa fa-comment mr-1"></i>0</small></div>
+                  <div class="col-12 py-1"><a class="d-block" href="">
+                      <h5 class="card-title">Chăm Sóc Da Dầu Mụn Với Dr.Belmeur</h5></a></div>
+                  <div class="col-12 news_desc" maxlength="maxlength">Primer và Makeup Base đều là sản phẩm lót trang điểm giúp bảo vệ bề mặt da, ngăn ngừa tình trạng phấn trang điểm len lỏi vào lỗ chân lông gây bít tắc da và mụn cám. Mặc dù có cùng...</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card news text-left">
+              <div class="news_hotimg"><a href="/"><img class="card-img-top" src="/dist/images/news-5.png" alt="8 bước vàng để có được làn da chuẩn mực như sao Hàn"/></a></div>
+              <div class="card-body py-2">
+                <div class="row">
+                  <div class="col-6 text-muted"><small><i class="fa fa-calendar-o mr-1"></i>08/05/2018</small></div>
+                  <div class="col-6 text-right text-muted"><small><i class="fa fa-comment mr-1"></i>0</small></div>
+                  <div class="col-12 py-1"><a class="d-block" href="">
+                      <h5 class="card-title">8 bước vàng để có được làn da chuẩn mực như sao Hàn</h5></a></div>
+                  <div class="col-12 news_desc" maxlength="maxlength">Primer và Makeup Base đều là sản phẩm lót trang điểm giúp bảo vệ bề mặt da, ngăn ngừa tình trạng phấn trang điểm len lỏi vào lỗ chân lông gây bít tắc da và mụn cám. Mặc dù có cùng...</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card news text-left">
+              <div class="news_hotimg"><a href="/"><img class="card-img-top" src="/dist/images/news-6.png" alt="Bí mật đằng sau những chiếc mặt nạ giấy"/></a></div>
+              <div class="card-body py-2">
+                <div class="row">
+                  <div class="col-6 text-muted"><small><i class="fa fa-calendar-o mr-1"></i>08/05/2018</small></div>
+                  <div class="col-6 text-right text-muted"><small><i class="fa fa-comment mr-1"></i>0</small></div>
+                  <div class="col-12 py-1"><a class="d-block" href="">
+                      <h5 class="card-title">Bí mật đằng sau những chiếc mặt nạ giấy</h5></a></div>
+                  <div class="col-12 news_desc" maxlength="maxlength">Primer và Makeup Base đều là sản phẩm lót trang điểm giúp bảo vệ bề mặt da, ngăn ngừa tình trạng phấn trang điểm len lỏi vào lỗ chân lông gây bít tắc da và mụn cám. Mặc dù có cùng...</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    <div class="container_noibat py-3">
       <div class="container text-center">
         <h3 class="container_title">Sản Phẩm Của</h3>
         <h2 class="container_subtitle text-uppercase">Movinaco</h2>
@@ -241,129 +336,190 @@
       </div>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-sm-3 mb-2">
+          <div class="col-md-3 mb-2">
             <div class="card sp_hot">
-              <div class="sp_hotimg"><a href="/"><img class="card-img-top" src="/dist/images/sp-1.jpg" alt="Viên uống đẹp da"/></a></div>
+              <div class="sp_hotimg"><a href="/productinfo.html"><img class="card-img-top" src="/dist/images/sp-1.jpg" alt="Viên uống đẹp da"/></a></div>
               <div class="card-body">
                 <h5 class="card-title">Viên uống đẹp da</h5>
                 <h3 class="card-text">250.000đ</h3>
               </div>
               <div class="card-footer text-center">
-                <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+                <div class="sp_btn"><a class="sp_btn" href="/productinfo.html">mua ngay</a></div>
               </div>
             </div>
           </div>
-          <div class="col-sm-3 mb-2">
+          <div class="col-md-3 mb-2">
             <div class="card sp_hot">
-              <div class="sp_hotimg"><a href="/"><img class="card-img-top" src="/dist/images/sp-2.jpg" alt="Kem dưỡng da toàn thân"/></a></div>
+              <div class="sp_hotimg"><a href="/productinfo.html"><img class="card-img-top" src="/dist/images/sp-2.jpg" alt="Kem dưỡng da toàn thân"/></a></div>
               <div class="card-body">
                 <h5 class="card-title">Kem dưỡng da toàn thân</h5>
                 <h3 class="card-text">250.000đ</h3>
               </div>
               <div class="card-footer text-center">
-                <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+                <div class="sp_btn"><a class="sp_btn" href="/productinfo.html">mua ngay</a></div>
               </div>
             </div>
           </div>
-          <div class="col-sm-3 mb-2">
+          <div class="col-md-3 mb-2">
             <div class="card sp_hot">
-              <div class="sp_hotimg"><a href="/"><img class="card-img-top" src="/dist/images/sp-3.jpg" alt="Kem trị nám"/></a></div>
+              <div class="sp_hotimg"><a href="/productinfo.html"><img class="card-img-top" src="/dist/images/sp-3.jpg" alt="Kem trị nám"/></a></div>
               <div class="card-body">
                 <h5 class="card-title">Kem trị nám</h5>
                 <h3 class="card-text">250.000đ</h3>
               </div>
               <div class="card-footer text-center">
-                <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+                <div class="sp_btn"><a class="sp_btn" href="/productinfo.html">mua ngay</a></div>
               </div>
             </div>
           </div>
-          <div class="col-sm-3 mb-2">
+          <div class="col-md-3 mb-2">
             <div class="card sp_hot">
-              <div class="sp_hotimg"><a href="/"><img class="card-img-top" src="/dist/images/sp-4.jpg" alt="Gel rửa mặt hạt nano vàng"/></a></div>
+              <div class="sp_hotimg"><a href="/productinfo.html"><img class="card-img-top" src="/dist/images/sp-4.jpg" alt="Gel rửa mặt hạt nano vàng"/></a></div>
               <div class="card-body">
                 <h5 class="card-title">Gel rửa mặt hạt nano vàng</h5>
                 <h3 class="card-text">250.000đ</h3>
               </div>
               <div class="card-footer text-center">
-                <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+                <div class="sp_btn"><a class="sp_btn" href="/productinfo.html">mua ngay</a></div>
               </div>
             </div>
           </div>
-          <div class="col-sm-3 mb-2">
+          <div class="col-md-3 mb-2">
             <div class="card sp_hot">
-              <div class="sp_hotimg"><a href="/"><img class="card-img-top" src="/dist/images/sp-5.jpg" alt="Kem trị mụn"/></a></div>
+              <div class="sp_hotimg"><a href="/productinfo.html"><img class="card-img-top" src="/dist/images/sp-5.jpg" alt="Kem trị mụn"/></a></div>
               <div class="card-body">
                 <h5 class="card-title">Kem trị mụn</h5>
                 <h3 class="card-text">250.000đ</h3>
               </div>
               <div class="card-footer text-center">
-                <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+                <div class="sp_btn"><a class="sp_btn" href="/productinfo.html">mua ngay</a></div>
               </div>
             </div>
           </div>
-          <div class="col-sm-3 mb-2">
+          <div class="col-md-3 mb-2">
             <div class="card sp_hot">
-              <div class="sp_hotimg"><a href="/"><img class="card-img-top" src="/dist/images/sp-6.jpg" alt="Kem dưỡng trắng trang điểm toàn thân"/></a></div>
+              <div class="sp_hotimg"><a href="/productinfo.html"><img class="card-img-top" src="/dist/images/sp-6.jpg" alt="Kem dưỡng trắng trang điểm toàn thân"/></a></div>
               <div class="card-body">
                 <h5 class="card-title">Kem dưỡng trắng trang điểm toàn thân</h5>
                 <h3 class="card-text">250.000đ</h3>
               </div>
               <div class="card-footer text-center">
-                <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+                <div class="sp_btn"><a class="sp_btn" href="/productinfo.html">mua ngay</a></div>
               </div>
             </div>
           </div>
-          <div class="col-sm-3 mb-2">
+          <div class="col-md-3 mb-2">
             <div class="card sp_hot">
-              <div class="sp_hotimg"><a href="/"><img class="card-img-top" src="/dist/images/sp-7.jpg" alt="Kem dưỡng trắng hồng da"/></a></div>
+              <div class="sp_hotimg"><a href="/productinfo.html"><img class="card-img-top" src="/dist/images/sp-7.jpg" alt="Kem dưỡng trắng hồng da"/></a></div>
               <div class="card-body">
                 <h5 class="card-title">Kem dưỡng trắng hồng da</h5>
                 <h3 class="card-text">250.000đ</h3>
               </div>
               <div class="card-footer text-center">
-                <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+                <div class="sp_btn"><a class="sp_btn" href="/productinfo.html">mua ngay</a></div>
               </div>
             </div>
           </div>
-          <div class="col-sm-3 mb-2">
+          <div class="col-md-3 mb-2">
             <div class="card sp_hot">
-              <div class="sp_hotimg"><a href="/"><img class="card-img-top" src="/dist/images/sp-8.jpg" alt="Kem dưỡng trắng da makeup "/></a></div>
+              <div class="sp_hotimg"><a href="/productinfo.html"><img class="card-img-top" src="/dist/images/sp-8.jpg" alt="Kem dưỡng trắng da makeup "/></a></div>
               <div class="card-body">
                 <h5 class="card-title">Kem dưỡng trắng da makeup </h5>
                 <h3 class="card-text">250.000đ</h3>
               </div>
               <div class="card-footer text-center">
-                <div class="sp_btn"><a class="sp_btn" href="#">mua ngay</a></div>
+                <div class="sp_btn"><a class="sp_btn" href="/productinfo.html">mua ngay</a></div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <footer class="bg-dark py-3">
-      <div class="container-fluid">
+    <div class="container_slo py-3">
+      <div class="container">
         <div class="row">
-          <div class="col-sm-3 footer_info"><a class="d-block footer_logo" href="/"><img class="w-100" src="/dist/images/logo.png" alt=""/></a>
-            <ul class="nolist">
-              <li><i class="fa fa-home mr-1 fa-lg"></i>Tầng 3, Tòa nhà GP INVEST, 170 Đê La Thành, P.Ô Chợ Dừa, Q.Đống Đa, HN</li>
-              <li class="d-inline-flex"><i class="fa fa-phone fa-lg"></i>
-                <p class="mb-0"><a href="tel:02546275555">
-                     Tổng đài hỗ trợ: (+84) 254 627 5555</a><a href="tel:02547300400 ">
-                     Số hotline ngoài giờ: (+84) 2547 300 400 </a></p>
-              </li>
-              <li><a href="mailto:design@vutatech.vn"><i class="fa fa-phone fa-lg"></i>Design@vutatech.vn</a></li>
-            </ul>
+          <div class="col-md-3 text-center"><i class="fa fa-truck fa-lg"></i>
+            <h5 class="mb-0">MIỄN PHÍ VẬN CHUYỂN</h5><small>Nhận hàng trong vòng 3 ngày</small>
           </div>
-          <div class="col-sm-3"></div>
-          <div class="col-sm-3"></div>
-          <div class="col-sm-3"></div>
+          <div class="col-md-3 text-center"><i class="fa fa-certificate fa-lg"></i>
+            <h5 class="mb-0">MIỄN PHÍ VẬN CHUYỂN</h5><small>Nhận hàng trong vòng 3 ngày</small>
+          </div>
+          <div class="col-md-3 text-center"><i class="fa fa-life-saver fa-lg"></i>
+            <h5 class="mb-0">MIỄN PHÍ VẬN CHUYỂN</h5><small>Nhận hàng trong vòng 3 ngày</small>
+          </div>
+          <div class="col-md-3 text-center"><i class="fa fa-undo fa-lg"></i>
+            <h5 class="mb-0">MIỄN PHÍ VẬN CHUYỂN</h5><small>Nhận hàng trong vòng 3 ngày</small>
+          </div>
         </div>
+      </div>
+    </div>
+    <footer>
+      <div class="bg-dark py-3 footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3 footer_info mb-md-0 mb-2"><a class="d-block footer_logo mb-1 text-md-left text-center" href="/"><img class="w-100" src="/dist/images/logo.png" alt=""/></a>
+              <ul class="nolist">
+                <li class="d-inline-flex align-items-center"><i class="fa fa-home mr-1 fa-lg mr-1 p-1"></i>
+                  <p class="mb-0">Tầng 3, Tòa nhà GP INVEST, 170 Đê La Thành, P.Ô Chợ Dừa, Q.Đống Đa, HN</p>
+                </li>
+                <li class="d-inline-flex align-items-center"><i class="fa fa-phone fa-lg mr-1 p-1"></i>
+                  <p class="mb-0"><a href="tel:02546275555">
+                       Tổng đài hỗ trợ: (+84) 254 627 5555</a><a href="tel:02547300400 ">
+                       Số hotline ngoài giờ: (+84) 2547 300 400 </a></p>
+                </li>
+                <li class="d-inline-flex align-items-center"><i class="fa fa-envelope fa-lg mr-1 p-1"></i>
+                  <p class="mb-0"><a href="mailto:design@vutatech.vn">Design@vutatech.vn</a></p>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3 mb-2">
+              <h4 class="text-light footer_title mb-md-3 mb-1">HỖ TRỢ KHÁCH HÀNG</h4>
+              <ul class="nolist footer_list">
+                <li><a href="/">Hướng dẫn đặt mua hàng tại Suplo Beauty</a></li>
+                <li><a href="/">Kinh nghiệm mua hàng cho bạn</a></li>
+                <li><a href="/">Đối tác và đại lý</a></li>
+                <li><a href="/">Phương thức thanh toán</a></li>
+                <li><a href="/">Khách hàng phản hồi</a></li>
+                <li><a href="/">Chính sách đổi trả hàng</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 mb-2">
+              <h4 class="text-light footer_title mb-md-3 mb-1">MUA SẮM CÙNG CHÚNG TÔI</h4>
+              <ul class="nolist footer_list">
+                <li><a href="/">Tin mới</a></li>
+                <li><a href="/">Khuyến mại mới nhất tại cửa hàng</a></li>
+                <li><a href="/">Địa điểm cửa hàng Movinaco</a></li>
+                <li><a href="/">LYB-LOGGERS</a></li>
+                <li><a href="/">Câu lạc bộ làm đẹp</a></li>
+                <li><a href="/">SOCIAL HUB</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h4 class="text-light footer_title mb-md-3 mb-1">ĐĂNG KÝ BẢN TIN</h4>
+              <p class="text-light">
+                Lấy giao dịch mới nhất và khuyến mại đặc biệt. Nhập email của bạn và đăng ký để ký bản tin của chúng tôi.</p>
+              <form action="">
+                <div class="input-group mb-3">
+                  <input class="form-control" type="text" placeholder="Địa chỉ email" aria-label="Địa chỉ email" aria-describedby="basic-addon2"/>
+                  <div class="input-group-append">
+                    <button class="input-group-text" id="basic-addon2" type="submit">Nhận Tin</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-dark">
+        <div class="container-fluid text-center py-1 text-light"><a class="text-light" href="/">Copyrights © 2017 by HARAVAN. All Rights Reserved.</a></div>
       </div>
     </footer>
     <script src="/dist/jquery/jquery-3.3.1.min.js"></script>
     <script src="/dist/bootstrap/js/bootstrap.min.js"></script>
     <script src="/dist/scrollbar/perfect-scrollbar.min.js"></script>
     <script src="/dist/swiper/js/swiper.min.js"></script>
+    <script src="/dist/main/js/jquery.zoom.min.js"></script>
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
     <script src="/dist/main/js/main.js"></script>
   </body>
 </html>
