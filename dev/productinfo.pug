@@ -3,16 +3,16 @@ block index
     include ./inc/header
     include ./inc/slider
     include ./mixin/widget
-    .container-fluid.py-4
+    .container-fluid.py-md-4
         .row
             .col-md-3.order-md-1.order-2
                 +listCategory
                 +show_product
-            .col-md-9.order-md-2.order-1.sp_hot
+            .col-md-9.order-md-2.order-1.px-md-3.sp_hot.px-0
                 .row
-                    .col-md-5
+                    .col-md-5.px-3
                         include ./inc/slideritem
-                    .col-md-7
+                    .col-md-7.px-3
                         h4.product_title Cream Aromatica Sea Daffodil Aqua Gel
                         p.text-warning
                             i.fa.fa-star.lg.mr-1
@@ -30,10 +30,10 @@ block index
                             li Dòng sản phẩm: Daily Perfume
                             li Giảm 10% cho hóa đơn trên 500.000 VNĐ
                             li Miễn phí giao hàng trong bán kính 5km
-                        .d-block
+                        .d-block.text-md-right.text-center
                             .sp_btn
                                 a.sp_btn(href='/productinfo.html') mua ngay                               
-                .col-md-12.px-sm-0.px-2.--tab_box.mt-2(tabs-role)
+                .col-md-12.px-md-0.px-md-2.px-0.--tab_box.mt-2(tabs-role)
                     .d-flex
                         a#tab-1.--tabs_tag.active(href="#tab-1" tab-action)
                             i.fa.fa-cube.fa-lg.mr-1
@@ -51,7 +51,7 @@ block index
                             .i.fa.fa-comment.fa-lg.mr-1
                             span.d-md-inline.d-none.text-uppercase
                                 |Bình Luận
-                    div(tabs-content)
+                    div(tabs-content).px-md-0.px-2
                         #tab-1.--tab_content.active.show
                             |Mô tả
                         #tab-2.--tab_content

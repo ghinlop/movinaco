@@ -1,0 +1,45 @@
+// #region Widget
+.widget_box{
+    .widget_header{
+        .widget_title{
+            font-size: 1.2em;
+            display: block;
+            position: relative;
+            padding: 5px 15px;
+            border-bottom: 1px solid #ddd;
+            color: #0088ff;
+            @include effect;
+            &::after{
+                content: "\f067";
+                font-family: $fa;
+                position: absolute;
+                top: 50%;
+                right: 15px;
+                @include transform(translateY(-50%));
+            }
+            &.collapsed{
+                color: #333;
+                &::after{
+                    content: "\f068";
+                }
+            }
+        }
+    }
+    .widget_body{
+        overflow-y: hidden;
+        li {
+            >a{
+                display: block;
+                padding: 5px 15px;
+                color: #333;
+                &:hover{
+                    color: #4dc2e6;
+                }
+            }
+            @include checkbox(#0088ff);
+        }
+        
+    }
+}
+
+// #endregion

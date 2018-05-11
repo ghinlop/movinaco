@@ -1,0 +1,51 @@
+// #region Menu Header
+aside{
+    .menu_bottom{
+        li{
+            padding: 7px 10px;
+            margin-right: 5px;
+            &:last-child{
+                margin: 0;
+            }
+            a{
+                color: #0088ff;
+                display: block;
+                padding: 8px 5px;
+                border-radius: 50px;
+                &:hover{
+                    color: #b8e008;
+                    box-shadow: 0 0 0 2px #b8e008;
+                }
+            }
+        }
+    }
+}
+// #endregion
+
+@include sm{
+    aside{
+        position: fixed!important;
+        max-width: 80vw;
+        height: 100vh;
+        top: 0;
+        left: -150%;
+        @include effect;
+        background: #333;
+        z-index: 11;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        &.active{
+            left: 0;
+        }
+        .menu_bottom{
+            li{
+                margin-right: 0;
+                padding: 0!important;
+                a{
+                    padding: 5px 15px;
+                    border-radius: unset;
+                }
+            }
+        }
+    }
+}

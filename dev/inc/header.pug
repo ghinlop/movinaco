@@ -1,46 +1,53 @@
 include ../data/data
+include ../mixin/auth
 #over
-header
-    .container
-        .row
-            .col-md-6
-                ul.w-100.d-md-inline-flex.align.items.center.menu_social.nolist
-                    li
-                        a(href="")
-                            i.fa.fa-phone.mr-1
-                            |(+84) 934 323 882 
-                    li
-                        a(href="")
-                            i.fa.fa-envelope.mr-1
-                            |(+84) 934 323 882 
-            .col-md-6
-                
-    .cart_show.effect#cart_show
-        .cart_show_content
-            a.cart_show_icon.text-white(href="#" toggle-menu="cart_show" over noscroll)
-                i.fa.fa-shopping-cart.fa.lg
-            .cart_show_box
-                .cart_show_header
-                    h3.cart_show_title.text-center Giỏ Hàng
-                .cart_show_body
-                    h5.text-center.d-block.p-2.text-light
-                        i.text-muted Vui lòng chọn sản phẩm
-                ul#cart-list.cartList.d-block.bg-dark.nolist.align-items-top(jqueryScroll)
-                    each item in items
-                        li.d-inline-flex
-                            a(href="#").cartList_img
-                                img(src=item.img, alt="")
-                            a(href="#").cartList_name=item.name
-                .d-block.p-2
-                    a.btn.btn-warning.btn-block.btn-lg Checkout
-    .bg-white
-        .container
-            .row.align-items-center
-                .col-md-2
-                    a(href="/").d-block.header_logo
-                        img(src="/dist/images/logo.png", alt="")
-                .col-md-10
-                    aside.text-md-right
+header.container-fluid.px-md-3.px-0
+    .row
+        .col-12.order-sm-1.order-2.header__top
+            .container.px-md-3.px-0
+                .row.align-items-center
+                    .col-md-3.header__social.d-sm-block.d-none
+                        ul.align-items-center.menu_social.nolist
+                            li
+                                a(href="tel:0934323882")
+                                    i.fa.fa-phone.mr-1
+                                    |(+84) 934 323 882 
+                            li
+                                a(href="mailto: design@vutatech.vn")
+                                    i.fa.fa-envelope.mr-1
+                                    |Eesign@vutatech.vn
+                    .col-md-5#search_menu
+                        form(action="")
+                            .input-group.mb-0.py-md-2
+                                input.rounded-0.form-control.border-0.bg-light(type='text', placeholder="Tìm Kiếm Sản Phẩm", aria-label="Tìm Kiếm Sản Phẩm", aria-describedby='search-header')
+                                .input-group-append.d-md-inline.d-none
+                                    button(type="submit")#search-header.input-group-text.bg-info.border-0.rounded-0
+                                        i.fa.fa-search.fa-lg.text-light.px-3
+                    .col-md-4.text-sm-right.header__toggle__menu
+                        ul.d-inline-flex.align-items-center.nolist.text-center.align-items-stretch
+                            li
+                                a.btn.btn-info.btn-sm.btn-block.mr-md-1.text-light(type="button", data-toggle="modal" data-target="#signinModel")
+                                    i.fa.fa-user.mr-1
+                                    span.d-md-inline.d-block Đăng Nhập
+                            li
+                                a.btn.btn-info.btn-sm.btn-block.mr-md-1.text-light(type='button', data-toggle='modal', data-target='#signupModel')
+                                    i.fa.fa-registered.mr-md-1
+                                    span.d-md-inline.d-block Đăng Ký
+                            li.d-md-none.d-block
+                                a.btn.btn-info.btn-sm.btn-block.mr-md-1.text-light(type="button" toggle-menu="search_menu" over noscroll)
+                                    i.fa.fa-search.mr-md-1
+                                    span.d-md-inline.d-block Tìm Kiếm
+                            li
+                                a.btn.btn-info.btn-sm.btn-block(type="button" toggle-menu="cart_show" over noscroll)
+                                    i.fa.fa-shopping-cart.mr-md-1.mr-0.mb-md-0.md-1
+                                    span.badge.badge-light.d-md-inline.d-block.mt-1.mt-md-0 1
+        .col-12.order-sm-2.order-1.header__bottom
+            .container
+                .row.align-items-center
+                    .col-md-2.col-10
+                        a(href="/").d-block.header__logo.text-md-left.text-center
+                            img(src="/dist/images/logo.png", alt="")                   
+                    aside#aside.text-md-right.col-md-10
                         ul.menu_bottom.d-md-inline-flex.nolist.text-uppercase.text-md-center
                             li
                                 a(href="/listproduct.html") Dưỡng da
@@ -64,3 +71,24 @@ header
                                 a(href="/") Khuyến Mãi
                             li
                                 a(href="/contact.html") Liên Hệ
+                    .col-2.d-block.d-sm-none
+                        a.text-center(type="button" toggle-menu="aside" over noscroll)
+                            i.fa.fa-bars.fa-2x
+.cart_show.effect#cart_show
+    .cart_show_content
+        .cart_show_box
+            .cart_show_header
+                h3.cart_show_title.text-center Giỏ Hàng
+            .cart_show_body
+                h5.text-center.d-block.p-2.text-light
+                    i.text-muted Vui lòng chọn sản phẩm
+            ul#cart-list.cartList.d-block.bg-dark.nolist.align-items-top(jqueryScroll)
+                each item in items
+                    li.d-inline-flex
+                        a(href="#").cartList_img
+                            img(src=item.img, alt="")
+                        a(href="#").cartList_name=item.name
+            .d-block.p-2
+                a.btn.btn-warning.btn-block.btn-lg(href="/cart.html") Checkout
++login("signinModel", "authClass", "Đăng Nhập")
++signup("signupModel", "authClass", "Đăng Ký")

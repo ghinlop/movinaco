@@ -16,6 +16,7 @@ $color: #000;
     -webkit-transition: $target $time $type;
 }
 @mixin placeholder($color: #000, $hover: null, $focus: null){
+    @content;
     &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
         color: $color;
     }
@@ -98,6 +99,12 @@ $color: #000;
 }
 @mixin e($el){
     &_#{$el}{
+        @content;
+    }
+}
+
+@mixin sm{
+    @media screen and (max-width: 768px){
         @content;
     }
 }

@@ -98,8 +98,8 @@ mixin show_product(name = 'Sản Phẩm', id = 'product')
                     li
                         a.px-3
                             .w-100.row(href="/productinfo.html")
-                                img.col-sm-3.d-block.px-0.w-100(src=val.img, alt=val.name)
-                                h6.col-sm-9.text-info=val.name
+                                img.col-3.d-block.px-0.w-100(src=val.img, alt=val.name)
+                                h6.col-9.text-info=val.name
                                     span.d-block.text-danger=val.price
 mixin listpost(name = "Bài viết", id = 'post')
     .widget_box
@@ -116,7 +116,33 @@ mixin listpost(name = "Bài viết", id = 'post')
                     li
                         a.py-1.d-block(href="/postdetailt.html")
                             small=post.title
+mixin cartstore(name = "Thông tin đơn hàng")
+    .widget_box.mb-md-0.mb-3
+        .widget_header.py-2
+            .h5.widget_title=name
+        .widget_body.px-3
+            .row.py-2
+                .col-md-7.text-muted
+                    |Tạm tinh( #{items.length} sản phẩm)
+                .col-md-5.text-md-right
+                    |200.000.000đ
+            .row.py-2
+                .col-md-7.text-muted
+                    |Phí giao hàng
+                .col-md-5.text-md-right
+                    |45.000đ
+            .input-group.mb-3.border-top.border-muted.py-3
+                input.form-control.bg-light.border-0.rounded-0(type='text', placeholder="Mã Giảm Giá", aria-label="Mã Giảm Giá", aria-describedby='selloff')
+                .input-group-append
+                    a#selloff.input-group-text.border-0.rounded-0.bg-info.text-light(type="button") Xác Nhận
+            .row.pb-2
+                .col-5.text-muted Tổng tiền
+                .col-7.text-info.text-right
+                    big 200.045.000đ
+            .form-group
+                a.btn.btn-info.btn-lg.btn-block(href="/payment.html") Tiến Hành Thanh Toán
 
+                    
 
 
 

@@ -1,0 +1,33 @@
+// #region Slider
+.header_slider .swiper-slide{
+    img{ max-height: 450px; width: 100vw;}
+}
+.swiper-slide{
+    img{
+        width: 100%;
+    }
+}
+.swiper-button-next, .swiper-button-prev{
+    width: 25px;
+    height: 25px;
+    background-size: 100%;
+}
+.gallery-thumbs {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    .swiper-slide {
+        display: block;
+        width: 12%;
+        height: 100%;
+        opacity: 0.4;
+    }
+    .swiper-slide-active {
+      opacity: 1;
+    }
+    img{
+        width: 100%;
+        display: block;
+    }
+  }
+// #endregion
