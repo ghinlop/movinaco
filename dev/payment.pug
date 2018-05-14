@@ -1,0 +1,60 @@
+extends ./layout/layout
+block index
+    include ./inc/header
+    include ./mixin/widget
+    
+    .bg-light.py-3
+        .container
+            .row
+                .col-md-8.order-md-1.order-2
+                    .bg-white.px-3
+                        h5.text-info.text-uppercase.border-bottom.border-info.mb-0.py-2
+                            |Thông tin giao hàng
+                        form(action="")
+                            .row
+                                .col-md-6
+                                    .form-group
+                                        label(for="name") Họ tên
+                                        input#name.form-control(type="text", placeholder="Họ tên người nhận hàng")
+                                .col-md-6
+                                     .form-group
+                                        label(for="email") Địa chỉ email
+                                        input#email.form-control(type="email", placeholder="Vui lòng nhập email")
+                                .col-md-6
+                                     .form-group
+                                        label(for="phone") Số điện thoại
+                                        input#phone.form-control(type="number", placeholder="Ví dụ: 09090909")
+                                .col-md-6
+                                     .form-group
+                                        label(for="city") Tỉnh/Thành Phố
+                                        select#city(name="city").form-control
+                                            option(value="1", disabled) Vui lòng chọn Tỉnh/Thành Phố
+                                            option(value="21") Hồ Chí Minh
+                                            option(value="3") Hà Nội
+                                .col-md-6
+                                     .form-group
+                                        label(for="region") Quận/Huyện
+                                        select#region(name="region").form-control
+                                            option(value="1", disabled) Vui lòng chọn Quận/Huyện
+                                            option(value="2", disabled) Quận 1
+                                            option(value="3", disabled) Quận 2
+                                            option(value="4", disabled) Quận 3
+                                .col-md-6
+                                     .form-group
+                                        label(for="region") Phường/Xã
+                                        select#region(name="region").form-control
+                                            option(value="1", disabled) Vui lòng chọn Phường/Xã
+                                            option(value="1", disabled) Phường 1
+                                            option(value="1", disabled) Phường 2
+                                            option(value="1", disabled) Phường 3
+                                .col-md-12
+                                     .form-group
+                                        label(for="address") Địa chỉ nhận hàng
+                                        textarea#address.form-control(name="", cols="30", rows="10", placeholder="Vui lòng nhập chính xác địa chỉ nhận hàng")
+                                .col-md-12.text-center.py-1
+                                    buttom.btn.btn-success.btn-lg.rounded-0 Lưu Thông Tin
+                .col-md-4.order-md-2.order-1
+                    .bg-white
+                        +cartstore
+                    .bg-white
+                        +login-btn

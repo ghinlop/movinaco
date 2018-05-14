@@ -9,14 +9,7 @@ const gulp = require('gulp')
     , plumber = require('gulp-plumber')
     , browserSync = require('browser-sync').create();
 
-gulp.task('browser-sync', function () {
-    browserSync.init({
-        server: {
-            baseDir: "./"
-        }
-    });
-    gulp.run(['watch-pug', 'watch-sass']).on('change', browserSync.reload)
-});
+
 
 gulp.task('sass', () => {
     gulp.src('./dist/main/css/main.scss')
@@ -57,7 +50,6 @@ gulp.task('watch-sass', () => {
         ['sass']);
 })
 gulp.task('watch-pug', () => {
-    liveReload.listen();
     gulp.watch([
         './dev/**/*.pug'],
         ['pug']);
@@ -70,5 +62,13 @@ gulp.task('server', function (done) {
     gulp.run(['watch-pug', 'watch-sass'])
 });
 
+gulp.task('browser-sync', function () {
+    browserSync.init({
+        server: {
+            baseDir: "./"
+        }
+    });
+    gulp.run(['watch-pug', 'watch-sass']).on('change', browserSync.reload)
+});
 
 

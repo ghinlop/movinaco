@@ -223,51 +223,117 @@
             </form>
           </div>
         </div>
-    <div class="container_page">
-      <div class="container py-5">
-        <h2 class="container_subtitle text-uppercase text-center">Xin Chào! </h2>
-        <h6 class="text-center">Nếu bạn có bất kỳ câu hỏi hoặc ý kiến nào, hoặc chỉ muốn chào hỏi, vui lòng liên hệ với nhóm hỗ trợ thân thiện của chúng tôi </h6>
-        <form action="/" method="POST">
-          <div class="form-group mt-4">
-            <div class="row">
-              <div class="col-md-4">
-                <input class="form-control" type="text" placeholder="Tên của bạn..."/>
-              </div>
-              <div class="col-md-4">
-                <input class="form-control" type="email" placeholder="Email..."/>
-              </div>
-              <div class="col-md-4">
-                <input class="form-control" type="number" placeholder="Số điện thoại..."/>
-              </div>
+    <div class="bg-light py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 order-md-1 order-2">
+            <div class="bg-white px-3">
+              <h5 class="text-info text-uppercase border-bottom border-info mb-0 py-2">Thông tin giao hàng</h5>
+              <form action="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="name">Họ tên</label>
+                      <input class="form-control" id="name" type="text" placeholder="Họ tên người nhận hàng"/>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="email">Địa chỉ email</label>
+                      <input class="form-control" id="email" type="email" placeholder="Vui lòng nhập email"/>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="phone">Số điện thoại</label>
+                      <input class="form-control" id="phone" type="number" placeholder="Ví dụ: 09090909"/>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="city">Tỉnh/Thành Phố</label>
+                      <select class="form-control" id="city" name="city">
+                        <option value="1" disabled="disabled">Vui lòng chọn Tỉnh/Thành Phố</option>
+                        <option value="21">Hồ Chí Minh</option>
+                        <option value="3">Hà Nội</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="region">Quận/Huyện</label>
+                      <select class="form-control" id="region" name="region">
+                        <option value="1" disabled="disabled">Vui lòng chọn Quận/Huyện</option>
+                        <option value="2" disabled="disabled">Quận 1</option>
+                        <option value="3" disabled="disabled">Quận 2</option>
+                        <option value="4" disabled="disabled">Quận 3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="region">Phường/Xã</label>
+                      <select class="form-control" id="region" name="region">
+                        <option value="1" disabled="disabled">Vui lòng chọn Phường/Xã</option>
+                        <option value="1" disabled="disabled">Phường 1</option>
+                        <option value="1" disabled="disabled">Phường 2</option>
+                        <option value="1" disabled="disabled">Phường 3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="address">Địa chỉ nhận hàng</label>
+                      <textarea class="form-control" id="address" name="" cols="30" rows="10" placeholder="Vui lòng nhập chính xác địa chỉ nhận hàng"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12 text-center py-1">
+                    <buttom class="btn btn-success btn-lg rounded-0">Lưu Thông Tin</buttom>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
-          <div class="form-group">
-            <textarea class="form-control" placeholder="Vui lòng nhập nội dung cần h64 trợ."></textarea>
-          </div>
-          <div class="from-group text-center">
-            <button class="btn btn-primary btn-lg">Gửi hỗ trợ</button>
-          </div>
-        </form>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row align-items-center py-4">
-        <div class="col-md-4">
-          <div class="d-md-inline-flex align-items-center">
-            <div class="fa fa-map fa-3x mr-md-2 text-info"></div>
-            <figure class="mb-0 text-info"><strong class="d-block">Địa Chỉ</strong><small class="mb-0 d-block">Tầng 3, Tòa nhà GP INVEST, 170 Đê La Thành, P.Ô Chợ Dừa, Q.Đống Đa, HN</small></figure>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="d-md-inline-flex align-items-center">
-            <div class="fa fa-envelope-o fa-3x mr-md-2 text-info"></div>
-            <figure class="mb-0"><strong class="d-block text-info">Email</strong><small class="mb-0 d-block"><a href="mailto:design@vutatech.vn">Design@vutatech.vn</a></small></figure>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="d-md-inline-flex align-items-center">
-            <div class="fa fa-phone fa-3x mr-md-2 text-info"></div>
-            <figure class="mb-0"><strong class="d-block text-info">Điện Thoại</strong><small class="mb-0 d-block"><a href="tel:02546275555">(+84) 254 627 5555</a><span class="mx-1">-</span><a href="tel:02547300400">(+84) 2547 300 400</a></small></figure>
+          <div class="col-md-4 order-md-2 order-1">
+            <div class="bg-white">
+                  <div class="widget_box mb-md-0 mb-3">
+                    <div class="widget_header py-2">
+                      <div class="h5 widget_title">Thông tin đơn hàng</div>
+                    </div>
+                    <div class="widget_body px-3">
+                      <div class="row py-2">
+                        <div class="col-md-7 text-muted">Tạm tinh( 8 sản phẩm)</div>
+                        <div class="col-md-5 text-md-right">200.000.000đ</div>
+                      </div>
+                      <div class="row py-2">
+                        <div class="col-md-7 text-muted">Phí giao hàng</div>
+                        <div class="col-md-5 text-md-right">45.000đ</div>
+                      </div>
+                      <div class="input-group mb-3 border-top border-muted py-3">
+                        <input class="form-control bg-light border-0 rounded-0" type="text" placeholder="Mã Giảm Giá" aria-label="Mã Giảm Giá" aria-describedby="selloff"/>
+                        <div class="input-group-append"><a class="input-group-text border-0 rounded-0 bg-info text-light" id="selloff" type="button">Xác Nhận</a></div>
+                      </div>
+                      <div class="row pb-2">
+                        <div class="col-5 text-muted">Tổng tiền</div>
+                        <div class="col-7 text-info text-right">
+                          <big>200.045.000đ</big>
+                        </div>
+                      </div>
+                      <div class="form-group"><a class="btn btn-info btn-lg btn-block" href="/payment.html">Tiến Hành Thanh Toán</a></div>
+                    </div>
+                  </div>
+            </div>
+            <div class="bg-white">
+                  <div class="widget_box mt-2">
+                    <div class="widget_header py-2">
+                      <div class="h5 widget_title">Đăng Nhập</div>
+                    </div>
+                    <div class="widget_body px-4 pb-2">
+                      <div class="row"><a class="col-12 btn btn-outline-info btn-lg btn-block text-uppercase rounded-0" data-toggle="modal" data-target="#signinModel">
+                           Đăng nhập quyền thành viên</a><a class="btn btn-block btn-primary btn-lg rounded-0 col-md-6" href="#"><i class="fa fa-facebook fa-2x mr-2"></i><span>acebook</span></a><a class="btn btn-block btn-danger btn-lg rounded-0 col-md-6" href="#"><i class="fa fa-google-plus fa-2x mr-2"></i><span>oogle</span></a></div>
+                    </div>
+                  </div>
+            </div>
           </div>
         </div>
       </div>
